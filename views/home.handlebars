@@ -1,0 +1,46 @@
+<div class="hero-image">
+ 
+    <h1>Mongo Scrapper</h1>
+    <p>New York Times Edition</p>
+  
+</div>
+
+<div class="alert alert-success" role="alert">
+  Article successfully saved
+</div>
+
+<div class="col-md-12">
+  {{#if article}} {{#each article}}
+  <div class="card">
+    <div class="card-header bg-primary">
+      <div class="row">
+        <div class="col-md-9">
+          <h4>{{this.title}}</h4>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-success save-button" data-id={{this._id}}>Save Article</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <p> {{this.summary}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <a href={{this.link}} target="_blank"><button class="btn btn-outline-primary">View full article</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}} {{else}}
+  <!-- Give a message if there are no articles -->
+  <div class="card">
+    <div class="card-body">
+      <h4>Oh no! Looks like there are no new articles to show!</h4>
+    </div>
+  </div>
+  {{/if}}
+</div>

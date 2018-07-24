@@ -1,0 +1,28 @@
+{
+  "name": "newsscrape",
+  "version": "1.0.0",
+  "description": "nyt scrape",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timdebien/NewsScrape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timdebien/NewsScrape/issues"
+  },
+  "homepage": "https://github.com/timdebien/NewsScrape#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.1.7",
+    "morgan": "^1.9.0",
+    "request": "^2.87.0"
+  }
+}

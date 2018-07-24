@@ -1,0 +1,58 @@
+body, html {
+  font-family: 'Times New Roman', Times, serif;
+  /* background-image: url('/images/paper_3.png'); */
+  color: white;
+}
+.top-nav {
+  margin-bottom: 20px;
+}
+.scrape-button {
+  margin-left: 10px;
+}
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #1b0429
+}
+.card-body {
+  color: black;
+}
+.card-header {
+  padding-bottom: 0;
+  padding-top: 10px;
+
+}
+h4 {
+  margin-bottom: 0;
+}
+.hero-image {
+ background-image:url("/assets/images/New-York-Times-sm.jpeg");
+ height: 30%;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+.save-button {
+  float: right;
+  margin-bottom: 5px;
+}
+.add-note {
+  float: left
+}
+.view-art {
+  margin-bottom: 20px;
+  float: right;
+}
+.delete-art {
+  margin-left: 10px;
+}
+.list-group {
+  margin-bottom: 20px;
+}
+
+.code {
+  float: right;
+}
+.modal-title, .modal-text, .existing-notes {
+  color: black;
+}

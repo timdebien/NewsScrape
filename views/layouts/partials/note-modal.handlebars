@@ -1,0 +1,43 @@
+<div class="modal fade note-modal" id="note-modal-{{this._id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Notes for {{this.title}}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <textarea id="note-content-{{this._id}}" class="form-control" rows="4" placeholder="New Note" maxlength=100></textarea>
+        </div>
+
+        {{#if this.notes}}
+        <h6 class="modal-text">Existing Notes:</h6>
+        <ul class="list-group"></ul>
+        {{#each this.notes}}
+
+        <li class="list-group-item">
+          <div class="row">
+            <div class="col-md-10">
+              <p class="existing-notes"> {{this.notes}}</p>
+            </div>
+            <div class="col-md-2">
+              <button type="button" class="btn btn-danger delete-note" data-note-id={{this._id}} data-article-id={{this.article}}>X</button>
+            </div>
+          </div>
+        </li>
+        {{/each}} </ul>{{else}}
+        <div class="card">
+          <div class="card-body">
+            <h4>There are no saved notes for this article!</h4>
+          </div>
+        </div>
+        {{/if}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary save-note" data-id={{this._id}}>Save Note</button>
+      </div>
+    </div>
+  </div>
+</div>
